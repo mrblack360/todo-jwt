@@ -1,0 +1,9 @@
+  _____               _               _  __        __  _____ 
+ |_   _|   ___     __| |   ___       | | \ \      / / |_   _|
+   | |    / _ \   / _` |  / _ \   _  | |  \ \ /\ / /    | |  
+   | |   | (_) | | (_| | | (_) | | |_| |   \ V  V /     | |  
+   |_|    \___/   \__,_|  \___/   \___/     \_/\_/      |_|  
+                                                             
+${application.title} ${application.version}
+Developed by Maswi, MR <+255786670024> Powered by Spring Boot ${spring-boot.version}
+
