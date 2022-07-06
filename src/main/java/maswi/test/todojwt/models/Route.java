@@ -1,20 +1,19 @@
 package maswi.test.todojwt.models;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 
 @AllArgsConstructor
+@Setter
+@Getter
 public class Route {
     @NonNull
-    @Setter
     String name;
     @NonNull
-    @Setter
     String method;
     @NonNull
-    @Setter
     String path;
-    @Setter
     String description;
 }
