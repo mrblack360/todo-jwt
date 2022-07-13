@@ -19,7 +19,7 @@ public class TodoUserDetails implements UserDetails {
 
     // @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByName(username).get(0);
+        User user = userRepository.findUserByName(username).get(0);
         if (user != null) {
             return new org.springframework.security.core.userdetails.User(user.getName(), "", new ArrayList<>());
         } else {

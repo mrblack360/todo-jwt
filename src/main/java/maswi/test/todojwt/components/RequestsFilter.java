@@ -45,7 +45,7 @@ public class RequestsFilter extends OncePerRequestFilter {
             logger.warn("JWT Token does not begin with Bearer String");
         }
         if (name != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-            User user = userRepository.findByName(name).get(0);
+            User user = userRepository.findUserByName(name).get(0);
             if (jwtUtils.validateToken(token, user)) {
                 // TODO: Ongeza roles hapa...
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
